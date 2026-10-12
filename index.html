@@ -48,4 +48,25 @@ footer{text-align:center;padding:30px;color:#555;border-top:1px solid #111;margi
 <button class="btn" style="padding:10px 20px;font-size:.9rem">اطلب الآن عبر واتساب</button>
 </div>
 <div class="card">
-<img src="https://via.placeholder.com/400x300/111/
+<img src="https://via.placeholder.com/400x300/111/FFD700?text=Product+3">
+<h3>محفظة جلد طبيعي</h3>
+<span>149 ر.س</span><br><br>
+<button class="btn" style="padding:10px 20px;font-size:.9rem">اطلب الآن عبر واتساب</button>
+</div>
+</div>
+</section>
+
+<footer>© 2026 مملكة الفخامة - جميع الحقوق محفوظة</footer>
+
+<script>
+// ضع رقم واتسابك هنا
+const whatsappNumber = "989014446690";
+document.querySelectorAll('.card .btn').forEach(btn=>{
+btn.addEventListener('click',()=>{
+const product = btn.parentElement.querySelector('h3').innerText;
+window.open(`https://wa.me/${whatsappNumber}?text=مرحبا، أريد طلب: ${product}`,'_blank')
+})
+})
+</script>
+</body>
+</html>
